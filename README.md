@@ -1,4 +1,4 @@
-# Log-File-Visualization
+# Log File Visualization
 
 This Python script reads log files, processes the data, and generates visualizations using Plotly. The visualizations include a bar chart showing the distribution of log levels and a time-series line plot displaying log levels and additional info over time.
 
