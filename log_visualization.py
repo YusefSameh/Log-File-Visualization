@@ -118,7 +118,11 @@ def main(log_file):
 
 if __name__ == "__main__":
     """
-    Entry point for the script. Continuously updates visualization of the log file every 2 seconds.
+    Entry point for the script.
     """
-    log_file = sys.argv[1]
-    main(log_file)
+    # Ensure exactly one command-line argument (log file) is provided
+    if len(sys.argv) != 2:
+        print("Usage: python log_visualization.py <log_file>")
+    else:
+        log_file = sys.argv[1]
+        main(log_file)
