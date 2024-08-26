@@ -18,10 +18,11 @@ This repository contains Python scripts for parsing log files, visualizing the d
    - `plotly`
    - `pymysql`
    - `argparse`
+   - `kaleido`
 
 You can install them using the following command:
 ```bash
-pip install pandas plotly pymysql argparse
+pip install pandas plotly pymysql argparse kaleido
 ```
 ## Usage
 
