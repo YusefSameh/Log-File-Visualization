@@ -54,11 +54,11 @@ pip install pandas plotly pymysql argparse kaleido
    2. Modify the database connection details in the script if necessary.
    3. Run the script with the path to your log file as an argument:
    ```bash
-   python Insertion.py <log_file>
+   python insertion.py <log_file>
    ```
    Example:
    ```bash
-   python Insertion.py /path/to/log/file.log
+   python insertion.py /path/to/log/file.log
    ```
 4- **Visualize data directly from the database**
 
@@ -67,18 +67,18 @@ pip install pandas plotly pymysql argparse kaleido
    2. Modify the database connection details in the script if necessary.
    3. Run the script with the path to the output file as an argument:
    ```bash
-   python visualize_from_db.py <output_file>
+   python visualization.py <output_file>
    ```
    Example:
    ```bash
-   python visualize_from_db.py output.png
+   python visualization.py output.png
    ```
 ## Functions 
 
 - **`parse_log_file(log_file)`**: Reads and parses the log file, breaking each log entry into its components (Date, Time, Level, Message, Additional Info).
 - **`main(log_file)` (in `log_visualization.py`)**: Main function that calls the parse_log_file function, processes the logs, and generates visualizations.
-- **`main(log_file)` (in `Insertion.py`)**: Parses the log file and inserts the parsed records into a MySQL database.
-- **`visualize(output_file)` (in `Visualization.py`)**: Fetches log data from the database and generates visualizations.
+- **`main(log_file)` (in `insertion.py`)**: Parses the log file and inserts the parsed records into a MySQL database.
+- **`visualize(output_file)` (in `visualization.py`)**: Fetches log data from the database and generates visualizations.
 
 ## Output
 
